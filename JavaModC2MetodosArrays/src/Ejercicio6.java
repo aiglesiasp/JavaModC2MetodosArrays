@@ -20,12 +20,11 @@ public class Ejercicio6 {
 		int numero = sc.nextInt();
 		sc.close();
 		int resultado = devolverCifras(numero);
-		System.out.println("El numero introducido tiene "+resultado+ " cifras");
-		
-		
+		System.out.println("El numero introducido tiene " + resultado + " cifras");
+
 	}
-	
-	//DEVOLVER CIFRAS
+
+	// DEVOLVER CIFRAS
 	public static int devolverCifras(int numero) {
 		int resultado = 0;
 		String num = String.valueOf(numero);

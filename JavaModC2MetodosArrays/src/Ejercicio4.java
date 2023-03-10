@@ -21,13 +21,13 @@ public class Ejercicio4 {
 		double numero = sc.nextDouble();
 		sc.close();
 		double resultado = calcularFactorial(numero);
-		System.out.println("El Factorial de "+numero+ " da como resultado: "+resultado);
+		System.out.println("El Factorial de " + numero + " da como resultado: " + resultado);
 
 	}
-	
-	//CALCULAR FACTORIAL
+
+	// CALCULAR FACTORIAL
 	public static double calcularFactorial(double numero) {
-		for(double i = numero-1; i>=1; i--) {
+		for (double i = numero - 1; i >= 1; i--) {
 			numero = numero * i;
 		}
 		return numero;

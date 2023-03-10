@@ -31,31 +31,31 @@ public class Ejercicio11 {
 		System.out.println("ARRAY 1MULTIPLICADA");
 		imprimirArray(arrayResultado);
 	}
-	
-	//RELLENAR ARRAY
-		public static int[] rellenarArray(int tamaño) {
-			int resultado[] = new int[tamaño];
-			for(int i=0; i<resultado.length; i++) {
-				resultado[i] = (int)Math.floor(Math.random()*100+1);
-			}
-			return resultado;
+
+	// RELLENAR ARRAY
+	public static int[] rellenarArray(int tamaño) {
+		int resultado[] = new int[tamaño];
+		for (int i = 0; i < resultado.length; i++) {
+			resultado[i] = (int) Math.floor(Math.random() * 100 + 1);
 		}
-		
-		//IMPRIMIR ARRAY
-		public static void imprimirArray(int arrayRellenado[]) {
-			for(int i = 0; i<arrayRellenado.length; i++) {
-				System.out.print(arrayRellenado[i] + " ");
-			}
+		return resultado;
+	}
+
+	// IMPRIMIR ARRAY
+	public static void imprimirArray(int arrayRellenado[]) {
+		for (int i = 0; i < arrayRellenado.length; i++) {
+			System.out.print(arrayRellenado[i] + " ");
 		}
-		
-		//MULTIPLICAR ARRAYS
-		public static int[] multiplicarArrays(int array1[], int array2[]) {
-			int resultado [] = new int[array1.length];
-			for (int i = 0; i<array1.length; i++) {
-					resultado [i] = array1[i]*array2[i];
-			}
-			return resultado;
-			
+	}
+
+	// MULTIPLICAR ARRAYS
+	public static int[] multiplicarArrays(int array1[], int array2[]) {
+		int resultado[] = new int[array1.length];
+		for (int i = 0; i < array1.length; i++) {
+			resultado[i] = array1[i] * array2[i];
 		}
+		return resultado;
+
+	}
 
 }

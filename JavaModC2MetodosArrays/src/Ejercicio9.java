@@ -33,7 +33,7 @@ public class Ejercicio9 {
 	public static int[] rellenarArray(int tamaño, double valorMin, double valorMax) {
 		int resultado[] = new int[tamaño];
 		for (int i = 0; i < resultado.length; i++) {
-			resultado[i] = (int)Math.floor(Math.random()*valorMax+valorMin);
+			resultado[i] = (int) Math.floor(Math.random() * valorMax + valorMin);
 		}
 		return resultado;
 	}
@@ -45,7 +45,7 @@ public class Ejercicio9 {
 			System.out.println("En la posicion " + i + " tenemos el valor " + arrayRellenado[i]);
 			sumatorio = sumatorio + arrayRellenado[i];
 		}
-		System.out.println("La suma total de los valores es: "+sumatorio);
+		System.out.println("La suma total de los valores es: " + sumatorio);
 	}
 
 }

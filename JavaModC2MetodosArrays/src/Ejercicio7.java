@@ -24,15 +24,15 @@ public class Ejercicio7 {
 		sc.close();
 		convertirDivisas(euros, tipoMoneda);
 	}
-	
-	//CONVERTIR DIVISAS
+
+	// CONVERTIR DIVISAS
 	public static void convertirDivisas(double euros, String tipoMoneda) {
 		double resultado = 0.0;
 		final double LIBRAS = 0.86;
 		final double DOLARES = 1.28611;
 		final double YENES = 129.852;
-		
-		switch(tipoMoneda.toUpperCase()) {
+
+		switch (tipoMoneda.toUpperCase()) {
 		case "LIBRAS":
 			resultado = LIBRAS * euros;
 			break;
@@ -43,8 +43,9 @@ public class Ejercicio7 {
 			resultado = YENES * euros;
 			break;
 		}
-		
-		System.out.println("Tras cambiar los "+euros+ " euros a "+tipoMoneda+" nos da como resultado: "+resultado+" "+tipoMoneda);
+
+		System.out.println("Tras cambiar los " + euros + " euros a " + tipoMoneda + " nos da como resultado: "
+				+ resultado + " " + tipoMoneda);
 	}
 
 }

@@ -28,45 +28,43 @@ public class Ejercicio10 {
 		imprimirArray(resultado);
 
 	}
-	
-	//GENERAR NUMEROS ALEATORIOS
-		public static int[] generarAleatorios(int entero, double valorMin, double valorMax) {
-			int resultado[] = new int[entero];
-			int valor = 0;
-			boolean estado = false;
-			for (int i=0; i<resultado.length; i++) {
-				do {
-					valor = (int) Math.floor(Math.random()*valorMax+valorMin);
-					estado = comprovarPrimo(valor);
-					
-				} while(estado != true);
-				resultado[i] = valor;
-			}
-			return resultado;	
+
+	// GENERAR NUMEROS ALEATORIOS
+	public static int[] generarAleatorios(int entero, double valorMin, double valorMax) {
+		int resultado[] = new int[entero];
+		int valor = 0;
+		boolean estado = false;
+		for (int i = 0; i < resultado.length; i++) {
+			do {
+				valor = (int) Math.floor(Math.random() * valorMax + valorMin);
+				estado = comprovarPrimo(valor);
+
+			} while (estado != true);
+			resultado[i] = valor;
 		}
-	
-	
-		//COMPROVAR PRIMO
-		public static boolean comprovarPrimo(int numero) {
-			int contador = 0;
-			for (int i = 1; i <= numero; i++) {
-				if (numero%i == 0) {
-					contador++;
-				}
-			}
-			if (contador == 2 || numero == 1) {
-				return true;
-			} else {
-				return false;
+		return resultado;
+	}
+
+	// COMPROVAR PRIMO
+	public static boolean comprovarPrimo(int numero) {
+		int contador = 0;
+		for (int i = 1; i <= numero; i++) {
+			if (numero % i == 0) {
+				contador++;
 			}
 		}
-		
-		// IMPRIMIR ARRAY
-		public static void imprimirArray(int arrayRellenado[]) {
-			for (int i = 0; i < arrayRellenado.length; i++) {
-				System.out.println("En la posicion " + i + " tenemos el valor " + arrayRellenado[i]);
-			}
+		if (contador == 2 || numero == 1) {
+			return true;
+		} else {
+			return false;
 		}
-		
+	}
+
+	// IMPRIMIR ARRAY
+	public static void imprimirArray(int arrayRellenado[]) {
+		for (int i = 0; i < arrayRellenado.length; i++) {
+			System.out.println("En la posicion " + i + " tenemos el valor " + arrayRellenado[i]);
+		}
+	}
 
 }
