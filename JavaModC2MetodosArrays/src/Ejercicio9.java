@@ -14,6 +14,7 @@ public class Ejercicio9 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		System.out.println("EJERCICIO 9 - RELLENAR ARRAY X POSICIONES con NUM ALEATORIOS");
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Introduce el tamaño de la array: ");
 		int tamaño = sc.nextInt();
@@ -22,6 +23,7 @@ public class Ejercicio9 {
 		double valorMin = sc.nextDouble();
 		System.out.println("Introduce el valor maximo: ");
 		double valorMax = sc.nextDouble();
+		sc.close();
 		int resultado[] = rellenarArray(tamaño, valorMin, valorMax);
 		imprimirArray(resultado);
 
