@@ -43,7 +43,7 @@ public class Ejercicio9 {
 			System.out.println("En la posicion " + i + " tenemos el valor " + arrayRellenado[i]);
 			sumatorio = sumatorio + arrayRellenado[i];
 		}
-		System.out.println("La suma total de los valores es: "+contador);
+		System.out.println("La suma total de los valores es: "+sumatorio);
 	}
 
 }
