@@ -29,6 +29,7 @@ public class Ejercicio3 {
 
 	}
 
+	//COMPROVAR PRIMO
 	public static boolean comprovarPrimo(int numero) {
 		int contador = 0;
 		for (int i = 1; i <= numero; i++) {

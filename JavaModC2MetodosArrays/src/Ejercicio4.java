@@ -25,6 +25,7 @@ public class Ejercicio4 {
 
 	}
 	
+	//CALCULAR FACTORIAL
 	public static double calcularFactorial(double numero) {
 		for(double i = numero-1; i>=1; i--) {
 			numero = numero * i;
